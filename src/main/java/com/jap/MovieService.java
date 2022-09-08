@@ -14,7 +14,7 @@ public class MovieService {
         Movie movie5 = new Movie(156, "The warrior", "Love", "12/34/2017");
 
         //create HashMap object and add all the Movie object inside it
-
+            Map<Movie, Integer> map = new HashMap<>();
         //Key will be movie object and value will be rating ranging from 1 to 5
 
         //return the HashMap object
