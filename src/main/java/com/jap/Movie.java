@@ -49,4 +49,14 @@ public class Movie {
         this.genre = genre;
         this.releaseDate = releaseDate;
     }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "movieId=" + movieId +
+                ", movieName='" + movieName + '\'' +
+                ", genre='" + genre + '\'' +
+                ", releaseDate='" + releaseDate + '\'' +
+                '}';
+    }
 }
