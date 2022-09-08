@@ -56,15 +56,18 @@ public class MovieService {
 
 
         //get the name of the movie with the highest rating and add it in the List created
+        for (Map.Entry <Movie,Integer> entry : map.entrySet()) {
+            if (entry.getValue() == 5) {
+                list.add(entry.getKey().getMovieName());
+            }
+        }
 
         //return the List object
-
-        List l = new ArrayList();
-        return l;
+        return list;
     }
     public Map<String,String> getAllMoviesWithComedy(Map<Movie,Integer> map){
         //Create a Map object
-
+        Map<String, String> map1 = new HashMap<>();
         //use entrySet to iterate through the Map object
 
         //get all the movies name and their released date for the movie of genre "comedy"
