@@ -16,16 +16,20 @@ public class MovieService {
         //create HashMap object and add all the Movie object inside it
             Map<Movie, Integer> map = new HashMap<>();
         //Key will be movie object and value will be rating ranging from 1 to 5
+        System.out.println(map.put(movie1, 5));
+        System.out.println(map.put(movie2, 3));
+        System.out.println(map.put(movie3, 4));
+        System.out.println(map.put(movie4, 5));
+        System.out.println(map.put(movie5, 4));
 
         //return the HashMap object
-        Map map = new HashMap();
+        //Map map = new HashMap();
 
         return map;
     }
 
     public Set<String> getMovieNameWithRating4(Map<Movie,Integer> map,int rating){
         //Create a TreeSet object
-
         //Use entrySet() method to iterate through the map object
 
         //retrieve all the movies name having rating as 4
