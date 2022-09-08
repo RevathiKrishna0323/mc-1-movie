@@ -43,12 +43,12 @@ public class MovieService {
 
         //return the TreeSet object
 
-      return null;
+      return set;
     }
 
     public List<String> getMovieWithHighestRating(Map<Movie,Integer> map){
         //Create a ArrayList object of type String
-
+        List<String> list = new ArrayList<>();
 
         //get the first value from the map and store it in the variable max
 
