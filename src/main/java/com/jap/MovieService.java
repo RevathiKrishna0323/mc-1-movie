@@ -32,7 +32,11 @@ public class MovieService {
         //Create a TreeSet object
         Set<String> set = new TreeSet<>();
         //Use entrySet() method to iterate through the map object
-
+        for (Map.Entry <Movie,Integer> entry : map.entrySet()) {
+            if (entry.getValue() == rating) {
+                set.add(entry.getKey().getMovieName());
+            }
+        }
         //retrieve all the movies name having rating as 4
 
         //Store the movie name in TreeSet object
